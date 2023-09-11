@@ -14,6 +14,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root {
+  width: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -68,19 +72,19 @@ button:focus-visible {
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-  background-color: aliceblue;
+body {
+  background-color: rgb(217, 236, 252);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vh;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: white;
+  padding-right: 25px;
+  border-radius: 12px;
 }
 
 .logo {
@@ -91,3 +95,48 @@ header {
   /* transition: all 0.3s ease 0s; */
 }
 
+.content {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.genInfo {
+  display: flex;
+}
+
+.genInfoFull {
+  width: 40vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form label {
+  font-weight: bold;
+}
+
+#form input {
+  border-radius: 5px;
+  background-color: rgba(59, 131, 246, 0.2);
+  min-height: 25px;
+  min-width: 250px;
+  max-width: 100%;
+}
+
+#form input:focus {
+
+  background-color: rgb(227, 229, 231);
+  border-color: rgb(59, 131, 246);
+  outline: none;
+  box-shadow: 0px 3px 15px rgba(59, 131, 246, 0.2);
+}
