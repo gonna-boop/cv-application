@@ -7,7 +7,7 @@ const Header = () => {
         <header>
             <img className="logo" src={resumeImage}></img>
             <nav>
-                    <a className='text'>CV Application</a>
+                    <h2 className='text'>CV Application</h2>
             </nav>
             <a className='cta' href='https://github.com/gonna-boop'><button>GitHub</button></a>
         </header>
