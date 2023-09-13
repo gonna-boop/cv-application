@@ -12,6 +12,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --nav-size: 60px;
+  --border: 1px solid #47a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
@@ -99,17 +109,20 @@ header {
   margin-left: 10%;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .genInfo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .genInfoFull {
-  width: 40vh;
+  width: 50vh;
   background-color: white;
   display: flex;
+  align-items: center;
   flex-direction: column;
   border-radius: 12px;
   padding: 15px;
@@ -139,4 +152,64 @@ header {
   border-color: rgb(59, 131, 246);
   outline: none;
   box-shadow: 0px 3px 15px rgba(59, 131, 246, 0.2);
+}
+
+.Education {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.Education-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Education-input {
+  width: 50vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.experience {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.experience-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.experience-input {
+  width: 50vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.userResume {
+  width: 110vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10vh;
+  min-height: 750px;
+}
+
+.cvHeader {
+  background-color:rgb(45, 77, 128);
+  min-height: 100px;
+  width: 110vh;
+  color: white;
+  font-weight: bold;
 }
