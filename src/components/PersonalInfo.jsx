@@ -14,6 +14,13 @@ const PersonalInfo = () => {
   const handleEmailChange = (event) => {
     setMessage({...message, email: event.target.value});
   }
+  const handlePhoneChange = (event) => {
+    setMessage({...message, phoneNum: event.target.value});
+  }
+
+  const handleAddressChange = (event) => {
+    setMessage({...message, address: event.target.value});
+  }
 
   return (
     <div className='genInfoFull'>
@@ -27,11 +34,10 @@ const PersonalInfo = () => {
                 <label htmlFor="email">Email</label>
                 <input onChange={handleEmailChange} type="email" id="email" name="email" /><br />
                 <label htmlFor="phoneNum">Phone Number</label>
-                <input type="tel" id="phoneNum" name="phoneNum" /><br />
+                <input onChange={handlePhoneChange}type="tel" id="phoneNum" name="phoneNum" /><br />
                 <label htmlFor="address">Address</label>
-                <input type="text" id="address" name="address" />
+                <input onChange={handleAddressChange}type="text" id="address" name="address" />
             </form>
-            <h2>Message: {message.fullName}</h2>
       </div>
   )
 }
